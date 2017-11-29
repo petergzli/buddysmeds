@@ -20,7 +20,7 @@ defmodule Buddysmeds.Mixfile do
   def application do
     [
       mod: {Buddysmeds, []},
-      applications: [:edeliver],
+      applications: [:phoenix, :phoenix_html, :cowboy, :edeliver, :postgrex, :ecto],
       extra_applications: [:logger]
     ]
   end
