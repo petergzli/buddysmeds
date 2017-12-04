@@ -573,19 +573,23 @@ textarea::-ms-input-placeholder
     margin-bottom: 30px;
     color: #fff;
 }
+.home-content h3{
+    font-size:16px;
+    font-weight:300;
+    color: #fff;
+}
 .home-content p{
     margin-bottom: 30px;
     color: #fff;
 }
 .home-content .home-contact{
-    margin-top: 90px;
+    margin-top: 30px;
 }
 
 .home-contact .input-group{display: block;}
 .home-content .input-group .form-control {
     position: relative;
     z-index: 2;
-    float: left;
     width: 65%;
     margin-bottom: 0;
     height: 60px;
@@ -594,7 +598,7 @@ textarea::-ms-input-placeholder
 .home-content .home-contact input[type="text"]{
     color:#82ca9c;
 }
-.home-content .home-contact input[type="submit"]{
+.home-content .home-contact input[type="button"]{
     display:inline-block;
     width:35%;
     background:#82ca9c;

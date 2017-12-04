@@ -122,7 +122,7 @@ jQuery(document).ready(function ($) {
 
 
 
-// scroll Up
+    // scroll Up
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 600) {
@@ -134,6 +134,46 @@ jQuery(document).ready(function ($) {
     $('.scrollup').click(function () {
         $("html, body").animate({scrollTop: 0}, 1000);
         return false;
+    });
+
+
+    /*---------------------------------------------*
+     * Email Form
+     ---------------------------------------------*/
+
+     $(function() {
+        $("#successMessage").hide()
+        $("#emailSubmit").click(function() {
+                $("#successMessage").hide();
+                /* get some values from elements on the page: */
+                var $form = $("#emailForm"),
+                    email = $form.find('input[name="email"]').val(),
+                    url = $form.attr('action'),
+                    CSRF_TOKEN = $form.find('input[name="_csrf_token"]').val();
+
+                /* Send the data using post */
+                $.ajax({
+                    url: url,
+                    type: "post",
+                    beforeSend: function(xhr) {
+                        xhr.setRequestHeader("X-CSRF-Token", CSRF_TOKEN);
+                    },
+                    data: {
+                      data: { email: email } 
+                    },
+                    dataType: "json",
+                    success: function (data) {
+                      $("#successMessage").show();
+                      var message = data.message;
+                      alert(message)
+                      $form.find("input[name='email'], textarea").val("");
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                        alert("Sorry, there was a problem with the server.");
+                    }
+                });
+
+            });
     });
 
 
