@@ -716,9 +716,8 @@ textarea::-ms-input-placeholder
 }
 
 .cd-pricing-container {
-    width: 90%;
     max-width: 1170px;
-    margin: 4em auto;
+    margin: 0 auto;
 }
 @media only screen and (min-width: 768px) {
     .cd-pricing-container {
