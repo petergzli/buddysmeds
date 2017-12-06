@@ -1,181 +1,254 @@
-"use strict";
+(function ($) {
+ "use strict";
 
+/*----------------------------
+	jQuery MeanMenu
+------------------------------ */
+	jQuery('nav#dropdown').meanmenu();
+/*----------------------------
+	wow js active
+------------------------------ */
+	new WOW().init();
+ 
+/*----------------------------
+	product-slider
+------------------------------ */  
+	$('.product-slider').slick({
+		speed: 300,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		prevArrow: '<button type="button" class="slick-prev">p<br />r<br />e<br />v</button>',
+		nextArrow: '<button type="button" class="slick-next">n<br />e<br />x<br />t</button>',
+		responsive: [
+			{  breakpoint: 1169,  settings: { slidesToShow: 3,  }  },
+			{  breakpoint: 969,   settings: { slidesToShow: 3,  }  },
+			{  breakpoint: 767,   settings: { slidesToShow: 1, }   },
+			{  breakpoint: 480,   settings: { slidesToShow: 1, }   },
+		]
+	}); 
 
-jQuery(document).ready(function ($) {
+/*----------------------------
+	discount-product-slider
+------------------------------ */  
+	$('.discount-product-slider').slick({
+		autoplay: false,
+		arrows: false,
+		dots: true,
+		speed: 500,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		responsive: [
+			{  breakpoint: 1169,  settings: { slidesToShow: 1,  }  },
+			{  breakpoint: 969,   settings: { slidesToShow: 1,  }  },
+			{  breakpoint: 767,   settings: { slidesToShow: 1, }   },
+		]
+	});
 
+/*----------------------------
+	brand-slider
+------------------------------ */  
+	$('.brand-slider').slick({
+		autoplay: false,
+		arrows: false,
+		dots: false,
+		speed: 300,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		responsive: [
+			{  breakpoint: 1169,  settings: { slidesToShow: 4,  }  },
+			{  breakpoint: 969,   settings: { slidesToShow: 3,  }  },
+			{  breakpoint: 767,   settings: { slidesToShow: 2, }   },
+			{  breakpoint: 480,   settings: { slidesToShow: 1, }   },
+		]
+	});
 
-    /*---------------------------------------------*
-     * Mobile menu
-     ---------------------------------------------*/
-    $('#navbar-collapse').find('a[href*=#]:not([href=#])').click(function () {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: (target.offset().top - 40)
-                }, 1000);
-                if ($('.navbar-toggle').css('display') != 'none') {
-                    $(this).parents('.container').find(".navbar-toggle").trigger("click");
-                }
-                return false;
-            }
-        }
-    });
+/*----------------------------
+	single-pro-slider
+------------------------------ */  
+	 $('.slider-for').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.slider-nav'
+	});
+	$('.slider-nav').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		asNavFor: '.slider-for',
+		dots: false,
+		arrows: true,
+		centerMode: false,
+		responsive: [
+			{  breakpoint: 480,   settings: { slidesToShow: 2, }   },
+		],
+		focusOnSelect: true,
+		prevArrow: '<div class="single-pro-arrow arrow-left"><i class="zmdi zmdi-chevron-left"></i></div>',
+		nextArrow: '<div class="single-pro-arrow arrow-right"><i class="zmdi zmdi-chevron-right"></i></div>',
+	});	
 
-
-    /*---------------------------------------------*
-     * For Price Table
-     ---------------------------------------------*/
-
-    checkScrolling($('.cd-pricing-body'));
-    $(window).on('resize', function () {
-        window.requestAnimationFrame(function () {
-            checkScrolling($('.cd-pricing-body'))
-        });
-    });
-    $('.cd-pricing-body').on('scroll', function () {
-        var selected = $(this);
-        window.requestAnimationFrame(function () {
-            checkScrolling(selected)
-        });
-    });
-
-    function checkScrolling(tables) {
-        tables.each(function () {
-            var table = $(this),
-                    totalTableWidth = parseInt(table.children('.cd-pricing-features').width()),
-                    tableViewport = parseInt(table.width());
-            if (table.scrollLeft() >= totalTableWidth - tableViewport - 1) {
-                table.parent('li').addClass('is-ended');
+/*---------------------
+ Lightbox
+--------------------- */	   
+	$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+		event.preventDefault();
+		$(this).ekkoLightbox();
+	});
+	
+/*----------------------------
+	main-menu button
+------------------------------ */
+	$('.menu-toggle').on('click', function(){
+		if($(this).hasClass('active')){
+			$(this).removeClass('active');
+			$('.main-menu').animate({left: '-225px'}, 500);
+		}
+		else{
+			$(this).addClass('active');
+			$('.main-menu').animate({left: '0'}, 500);
+		}
+	});
+	
+/*----------------------------
+	search button
+------------------------------ */
+	$('.search-open').on('click', function(){
+		$('.sidebar-search').removeClass('slideOutUp').addClass('slideInDown');
+	});
+	$('.close-search').on('click', function(){
+		$('.sidebar-search').removeClass('slideInDown').addClass('slideOutUp');
+	});
+/*----------------------------
+	Mega-menu Scroll
+------------------------------ */
+    $(".menu-scroll").niceScroll({cursorborder:"1px",cursorcolor:"#c87065",boxzoom:true}); // First scrollable DIV	
+    $(".boxscrol2").niceScroll({cursorborder:"0px",cursorcolor:"#c87065",boxzoom:true}); // Second scrollable DIV	
+	
+/*----------------------
+	sticky-menu
+--------------------- */
+    var sticky_menu = $("#sticky-menu");
+    var pos = sticky_menu.position();
+    if (sticky_menu.length) {
+        var windowpos = sticky_menu.offset().top;
+        $(window).on('scroll', function() {
+            var windowpos = $(window).scrollTop();
+            if (windowpos > pos.top) {
+                sticky_menu.addClass("sticky");
             } else {
-                table.parent('li').removeClass('is-ended');
+                sticky_menu.removeClass("sticky");
             }
         });
     }
 
-    //switch from monthly to annual pricing tables
-    bouncy_filter($('.cd-pricing-container'));
+/*--------------------------
+	tooltip active jquery
+---------------------------- */
+	$('.product-action a').tooltip({
+        container: 'body'
+    });	
+	
+/*---------------------
+	countdown
+--------------------- */
+	$('[data-countdown]').each(function() {
+		var $this = $(this), finalDate = $(this).data('countdown');
+		$this.countdown(finalDate, function(event) {
+			$this.html(event.strftime('<span class="cdown days"><span class="time-count">%-D</span> <p>Days</p></span> <span class="cdown hour"><span class="time-count">%-H</span> <p>Hour</p></span> <span class="cdown minutes"><span class="time-count">%M</span> <p>Min</p></span>'));
+		});
+	});	
+	
+/*---------------------
+	treeview
+--------------------- */	
+	$("#cat-treeview ul").treeview({
+		animated: "normal",
+		persist: "location",
+		collapsed: true,
+		unique: true,
+	});
+	
+/*----------------------------
+	price-slider active
+------------------------------ */  
+	$( "#slider-range" ).slider({
+		range: true,
+		min: 50,
+		max: 2000,
+		values: [ 0, 999 ],
+		slide: function( event, ui ) {
+			$( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+		}
+	});
+	$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+	" - $" + $( "#slider-range" ).slider( "values", 1 ) );  
+	
+/*----------------------------
+	Cart Plus Minus Button
+------------------------------ */
+	$(".cart-plus-minus").prepend('<div class="dec qtybutton">-</div>');
+	$(".cart-plus-minus").append('<div class="inc qtybutton">+</div>');
+	$(".qtybutton").on("click", function() {
+		var $button = $(this);
+		var oldValue = $button.parent().find("input").val();
+		if ($button.text() == "+") {
+			var newVal = parseFloat(oldValue) + 1;
+		} 
+		else {
+			// Don't allow decrementing below zero
+			if (oldValue > 0) {
+				var newVal = parseFloat(oldValue) - 1;
+			} 
+			else {
+				newVal = 0;
+			}
+		}
+		$button.parent().find("input").val(newVal);
+	});
 
-    function bouncy_filter(container) {
-        container.each(function () {
-            var pricing_table = $(this);
-            var filter_list_container = pricing_table.children('.cd-pricing-switcher'),
-                    filter_radios = filter_list_container.find('input[type="radio"]'),
-                    pricing_table_wrapper = pricing_table.find('.cd-pricing-wrapper');
+/*-------------------------
+	accordion toggle function
+--------------------------*/
+	$('.payment-accordion').find('.payment-accordion-toggle').on('click', function(){
+		//Expand or collapse this panel
+		$(this).next().slideToggle(500);
+		//Hide the other panels
+		$(".payment-content").not($(this).next()).slideUp(500);
+	});
+/* -------------------------------------------------------
+	accordion active class for style
+----------------------------------------------------------*/
+	$('.payment-accordion-toggle').on('click', function(event) {
+		$(this).siblings('.active').removeClass('active');
+		$(this).addClass('active');
+		event.preventDefault();
+	}); 	   
+/*--------------------------
+	scrollUp
+---------------------------- */	
+	$.scrollUp({
+		scrollText: '<i class="zmdi zmdi-triangle-up"></i>',
+		easingType: 'linear',
+		scrollSpeed: 900,
+		animation: 'fade'
+	}); 	   
 
-            //store pricing table items
-            var table_elements = {};
-            filter_radios.each(function () {
-                var filter_type = $(this).val();
-                table_elements[filter_type] = pricing_table_wrapper.find('li[data-type="' + filter_type + '"]');
-            });
-
-            //detect input change event
-            filter_radios.on('change', function (event) {
-                event.preventDefault();
-                //detect which radio input item was checked
-                var selected_filter = $(event.target).val();
-
-                //give higher z-index to the pricing table items selected by the radio input
-                show_selected_items(table_elements[selected_filter]);
-
-                //rotate each cd-pricing-wrapper 
-                //at the end of the animation hide the not-selected pricing tables and rotate back the .cd-pricing-wrapper
-
-                if (!Modernizr.cssanimations) {
-                    hide_not_selected_items(table_elements, selected_filter);
-                    pricing_table_wrapper.removeClass('is-switched');
-                } else {
-                    pricing_table_wrapper.addClass('is-switched').eq(0).one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function () {
-                        hide_not_selected_items(table_elements, selected_filter);
-                        pricing_table_wrapper.removeClass('is-switched');
-                        //change rotation direction if .cd-pricing-list has the .cd-bounce-invert class
-                        if (pricing_table.find('.cd-pricing-list').hasClass('cd-bounce-invert'))
-                            pricing_table_wrapper.toggleClass('reverse-animation');
-                    });
-                }
-            });
-        });
-    }
-    function show_selected_items(selected_elements) {
-        selected_elements.addClass('is-selected');
-    }
-
-    function hide_not_selected_items(table_containers, filter) {
-        $.each(table_containers, function (key, value) {
-            if (key != filter) {
-                $(this).removeClass('is-visible is-selected').addClass('is-hidden');
-
-            } else {
-                $(this).addClass('is-visible').removeClass('is-hidden is-selected');
-            }
-        });
-    }
-
-
-    /*---------------------------------------------*
-     * STICKY scroll
-     ---------------------------------------------*/
-
-    $.localScroll();
-
-
-
-    // scroll Up
-
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 600) {
-            $('.scrollup').fadeIn('slow');
-        } else {
-            $('.scrollup').fadeOut('slow');
-        }
-    });
-    $('.scrollup').click(function () {
-        $("html, body").animate({scrollTop: 0}, 1000);
-        return false;
-    });
-
-
-    /*---------------------------------------------*
-     * Email Form
-     ---------------------------------------------*/
-
-     $(function() {
-        $("#successMessage").hide()
-        $("#emailSubmit").click(function() {
-                $("#successMessage").hide();
-                /* get some values from elements on the page: */
-                var $form = $("#emailForm"),
-                    email = $form.find('input[name="email"]').val(),
-                    url = $form.attr('action'),
-                    CSRF_TOKEN = $form.find('input[name="_csrf_token"]').val();
-
-                /* Send the data using post */
-                $.ajax({
-                    url: url,
-                    type: "post",
-                    beforeSend: function(xhr) {
-                        xhr.setRequestHeader("X-CSRF-Token", CSRF_TOKEN);
-                    },
-                    data: {
-                      data: { email: email } 
-                    },
-                    dataType: "json",
-                    success: function (data) {
-                      $("#successMessage").show();
-                      var message = data.message;
-                      alert(message)
-                      $form.find("input[name='email'], textarea").val("");
-                    },
-                    error: function(jqXHR, textStatus, errorThrown) {
-                        alert("Sorry, there was a problem with the server.");
-                    }
-                });
-
-            });
-    });
+/*--------------------------	
+	shop page manu dropdown	
+---------------------------- */	
+	$('.dropdown .option-btn').on('click', function(){
+		if($(this).siblings('.dropdown-menu').hasClass('active')){
+			$(this).siblings('.dropdown-menu').removeClass('active').slideUp();
+			$(this).removeClass('active');
+		}
+		else{
+			$('.dropdown .dropdown-menu').removeClass('active').slideUp();
+			$('.dropdown .option-btn').removeClass('active');
+			$(this).addClass('active');
+			$(this).siblings('.dropdown-menu').addClass('active').slideDown();
+		}
+	});
 
 
-    //End
-});
+
+})(jQuery);
