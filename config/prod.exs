@@ -13,7 +13,7 @@ use Mix.Config
 # which you typically run after static files are built.
 config :buddysmeds, Buddysmeds.Endpoint,
   http: [port: 8888],
-  url: [host: "buddyslab.com", port: 80],
+  url: [host: "buddysorganic.com", port: 443, scheme: "https"],
   cache_static_manifest: "priv/static/cache_manifest.json"
 
 # Do not print debug messages in production
