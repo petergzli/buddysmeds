@@ -109,7 +109,7 @@ body {
 	2. Header-area
 ========================================= */
 .header {
-  background: #fff none repeat scroll 0 0;
+  background: #7DC144 none repeat scroll 0 0;
 	transition: all 0.5s ease 0s;
 }
 .header-area .container-fluid {
@@ -179,7 +179,7 @@ body {
   padding: 20px;
 }
 .cart-items p span {
-  color: #c87065;
+  color: #EF9020;
 }
 .all-cart-product {
   padding: 10px 0;
@@ -231,7 +231,7 @@ body {
   visibility: visible;
   z-index: 99999999;
 }
-.mini-cart ul li:hover  .cart-icon {
+.mini-cart ul li:hover .cart-icon {
   color: #c8a165;
 }
 /* Main-Menu */
@@ -271,7 +271,7 @@ body {
   z-index: 1;
 }
 .main-menu > nav > ul > li > a::before {
-  background: #c8a165 none repeat scroll 0 0;
+  background: #EF9020 none repeat scroll 0 0;
   content: "";
   height: 100%;
   left: -100%;
@@ -401,7 +401,36 @@ body {
     transition: all 0.5s ease 0s;
 }
 .header-2.sticky {
-    background: #fff none repeat scroll 0 0;
+    background: #7DC144 none repeat scroll 0 0;
+}
+
+/* -----------------------------------------
+  Email Subscription
+----------------------------------------- */
+.email-subscription-title {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 15px;
+  text-align: center;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+.email-subscription button {
+  background: #EF9020 none repeat scroll 0 0;
+  color: #fff;
+  font-weight: 700;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 25px;
+  text-transform: uppercase;
+}
+.email-subscription button:hover {
+  background: #F6F6F6 none repeat scroll 0 0;
+  color: #EF9020;
+}
+.subscription-footer {
+  margin-bottom: 60px;
 }
 /* -----------------------------------------
 	3. Slider-section
@@ -575,7 +604,7 @@ body {
 }
 .sidebar-search input {
   background: transparent none repeat scroll 0 0;
-  border-bottom: 1px solid #c87065;
+  border-bottom: 1px solid #EF9020;
   font-size: 16px;
   margin-top: 230px;
 }
@@ -661,13 +690,13 @@ body {
   margin-bottom: 5px;
 }
 .pro-price {
-  color: #c87065;
+  color: #EF9020;
   font-size: 18px;
   font-weight: bold;
   line-height: 28px;
 }
 .pro-rating a {
-  color: #c87065;
+  color: #EF9020;
   font-size: 15px;
   line-height: 28px;
 }
@@ -695,7 +724,7 @@ body {
   width: 100%;
 }
 .onsale {
-  background: #c87065 none repeat scroll 0 0;
+  background: #EF9020 none repeat scroll 0 0;
   border-radius: 50%;
   float: left;
   height: 112px;
@@ -795,7 +824,7 @@ body {
   line-height: 14px;
   margin-right: 20px;
 }
-.like-share a:hover { color: #c87065;}
+.like-share a:hover { color: #EF9020;}
 .like-share a:last-child { margin-right: 0;}
 .like-share a i { padding: 0 8px 0 2px;}
 .blog-photo { overflow: hidden;}
@@ -820,7 +849,7 @@ body {
 }
 .subscribe input {
   background: transparent none repeat scroll 0 0;
-  border-bottom: 1px solid #c87065;
+  border-bottom: 1px solid #EF9020;
   margin: 0;
   position: relative;
   top: -4px;
@@ -842,7 +871,7 @@ body {
   text-transform: uppercase;
 }
 .footer-title.title-border::before {
-  background: #c87065 none repeat scroll 0 0;
+  background: #EF9020 none repeat scroll 0 0;
 }
 .footer-contact li {
   display: block;
@@ -947,7 +976,7 @@ body {
   width: calc(100% - 0px);
 }
 .pro-price-2 {
-  color: #c87065;
+  color: #EF9020;
   font-size: 18px;
   font-weight: 700;
   line-height: 1;
@@ -1021,7 +1050,7 @@ body {
   display: inline-block;
   float: none;
 }
-.blog-2 .like-share a:hover { color: #c87065;}
+.blog-2 .like-share a:hover { color: #EF9020;}
 .blog-2 .post-meta { padding: 30px 0 10px;}
 .blog-2 .single-blog:hover { box-shadow: 1px 25px 54px rgba(0, 0, 0, 0.12);}
 .blog-2 .single-blog:hover .blog-photo img { transform: none;}
@@ -1048,7 +1077,7 @@ body {
   padding-top: 130px;
 }
 .footer-subscribe button {
-  background: #f7f7f7 none repeat scroll 0 0;
+  background: #EF9020 none repeat scroll 0 0;
   color: #666;
   font-weight: 700;
   height: 35px;
@@ -1058,7 +1087,7 @@ body {
 }
 .footer-subscribe button:hover {
   background: #F6F6F6 none repeat scroll 0 0;
-  color: #C8A165;
+  color: #EF9020;
 }
 .copyright-2 {
   background: #f2f2f2 none repeat scroll 0 0;
@@ -1067,11 +1096,14 @@ body {
   background: #eeeeee none repeat scroll 0 0;
   padding: 80px 0;
 }
+#subscribe-email {
+  background-color:#fff;
+}
 /* ---------------------------------
 	11. Shop-page
 ----------------------------------- */
 .heading-banner-area {
-  background: rgba(0, 0, 0, 0) url("img/bg/1.jpg") no-repeat scroll center center / cover ;
+  background: rgba(0, 0, 0, 0) url("/images/bg/1.jpg") no-repeat scroll center center / cover ;
 }
 .heading-banner-title h2 {
   color: #fff;
@@ -1220,11 +1252,11 @@ body {
   height: 3px;
 }
 .ui-slider-range.ui-widget-header.ui-corner-all {
-  background: #c87065 none repeat scroll 0 0;
+  background: #EF9020 none repeat scroll 0 0;
 }
 .ui-slider-handle.ui-state-default.ui-corner-all {
   background: #fff none repeat scroll 0 0;
-  border: 2px solid #c87065;
+  border: 2px solid #EF9020;
   height: 12px;
   width: 12px;
 }
@@ -1611,7 +1643,7 @@ input.cart-plus-minus-box {
   padding-left: 20px;
 }
 .your-rating span a {
-  color: #c87065;
+  color: #EF9020;
   font-size: 16px;
 }
 .separator {
@@ -1748,7 +1780,7 @@ input.cart-plus-minus-box {
   border-bottom: 0;
 }
 .payment-details table tr:last-child td {
-  color: #c87065;
+  color: #EF9020;
   padding: 15px 30px 0;
 }
 /* cart-page-menu */

@@ -1,36 +1,259 @@
-<div class="jumbotron">
-  <h2><%= gettext "Welcome to %{name}", name: "Phoenix!" %></h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
-</div>
+<!-- SLIDER-AREA START  -->
+<section class="slider-area slider-style-2">
+    <div class="bend niceties preview-2">
+        <div id="ensign-nivoslider" class="slides"> 
+            <img src="/images/slider/slider-2/1.jpg" alt="" title="#slider-direction-1"  />
+            <img src="/images/slider/slider-2/2.jpg" alt="" title="#slider-direction-2"  />
+            <img src="/images/slider/slider-2/3.jpg" alt="" title="#slider-direction-3"  />
+        </div>
+        <!-- direction 1 -->
+        <div id="slider-direction-1" class="t-cn slider-direction">
+            <div class="slider-progress"></div>
+            <div class="slider-content t-lfl s-tb slider-1">
+                <div class="title-container s-tb-c title-compress">
+                    <div class="layer-1">
+                        <div class="wow fadeInUpBig" data-wow-duration="2s" data-wow-delay="0.5s">
+                            <h3 class="slider-title3 text-uppercase mb-0" >welcome to our</h3>
+                        </div>
+                        <div class="wow fadeInUpBig" data-wow-duration="2.5s" data-wow-delay="0.5s">
+                            <h2 class="slider-title1 text-uppercase mb-0"><span class="hidden-xs">elegent </span>  furniture</h2>
+                        </div>
+                        <div class="wow fadeInUpBig" data-wow-duration="3s" data-wow-delay="0.5s">
+                            <h2 class="slider-title2 text-uppercase" >gallery 2016</h2>
+                        </div>
+                        <div class="wow fadeInUpBig" data-wow-duration="3.5s" data-wow-delay="0.5s">
+                            <a href="#" class="button-one style-2 text-uppercase mt-20" data-text="Shop now">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <!-- direction 2 -->
+        <div id="slider-direction-2" class="slider-direction">
+            <div class="slider-progress"></div>
+            <div class="slider-content t-lfl s-tb slider-1">
+                <div class="title-container s-tb-c title-compress">
+                    <div class="layer-1">
+                        <div class="wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <h3 class="slider-title3 text-uppercase mb-0" >welcome to our</h3>
+                        </div>
+                        <div class="wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                            <h2 class="slider-title1 text-uppercase"><span class="hidden-xs">elegent </span> furniture</h2>
+                        </div>
+                        <div class="wow fadeInUpBig" data-wow-duration="2s" data-wow-delay="0.5s">
+                            <p class="slider-pro-brief">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.  If you are going to use a  passage of Lorem Ipsum, you need to be sure there hidden in the middle of text.</p>
+                        </div>
+                        <div class="wow fadeInUpBig" data-wow-duration="2.5s" data-wow-delay="0.5s">
+                            <a href="#" class="button-one style-2 text-uppercase mt-20" data-text="Shop now">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+        </div>
+        <!-- direction 3 -->
+        <div id="slider-direction-3" class="slider-direction">
+            <div class="slider-progress"></div>
+            <div class="slider-content t-lfl s-tb slider-1">
+                <div class="title-container s-tb-c title-compress">
+                    <div class="layer-1">
+                        <div class="wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <h3 class="slider-title3 text-uppercase mb-0" >welcome to our</h3>
+                        </div>
+                        <div class="wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                            <h2 class="slider-title1 text-uppercase mb-0"><span class="hidden-xs">elegent </span> furniture</h2>
+                        </div>
+                        <div class="wow fadeInUpBig" data-wow-duration="2s" data-wow-delay="0.5s">
+                            <h2 class="slider-title2 text-uppercase" >gallery 2016</h2>
+                        </div>
+                        <div class="wow fadeInUpBig" data-wow-duration="2.5s" data-wow-delay="0.5s">
+                            <p class="slider-pro-brief">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.  If you are going to use a  passage of Lorem Ipsum, you need to be sure there hidden in the middle of text.</p>
+                        </div>
+                        <div class="wow fadeInUpBig" data-wow-duration="3s" data-wow-delay="0.5s">
+                            <a href="#" class="button-one style-2 text-uppercase mt-20" data-text="Shop now">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+        </div>
+    </div>
+</section>
+<!-- SLIDER-AREA END -->
 
-<div class="row marketing">
-  <div class="col-lg-6">
-    <h4>Resources</h4>
-    <ul>
-      <li>
-        <a href="http://phoenixframework.org/docs/overview">Guides</a>
-      </li>
-      <li>
-        <a href="https://hexdocs.pm/phoenix">Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="col-lg-6">
-    <h4>Help</h4>
-    <ul>
-      <li>
-        <a href="http://groups.google.com/group/phoenix-talk">Mailing list</a>
-      </li>
-      <li>
-        <a href="http://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">@elixirphoenix</a>
-      </li>
-    </ul>
-  </div>
+<!-- PRODUCT-AREA START -->
+<div class="product-area pt-80 pb-30 product-style-2">
+    <div class="container">
+        <div class="subscription-footer col-md-4 col-md-offset-4">
+            <h3 class="email-subscription-title">Hear From Buddy</h3>
+            <div class="email-subscription">
+                <form action="#">
+                    <input id="subscribe-email" type="text" name="email" placeholder="buddy@example.com" />
+                    <button class="button-one submit-btn-4" type="submit" data-text="Subscribe">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <!-- Section-title start -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h2 class="title-border">Featured Products</h2>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<!-- PRODUCT-AREA END -->
+<!-- DISCOUNT-PRODUCT START -->
+<div class="discount-product-area discount-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="row">
+                    <div class="discount-product-slider dots-bottom-right">
+                        <!-- single-discount-product start -->
+                        <div class="col-lg-12">
+                            <div class="discount-product">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                                        <a href="single-blog.html">
+                                            <img src="/images/discount/5.jpg" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+                                        <div class="discount-info"> 
+                                            <h1 class="text-dark-red">Organic Hemp Oil</h1>
+                                            <p>Buddy’s Organic contains 0% THC and is fit for consumption by humans, dogs and cats. The main active ingredients are hemp oil, which is Our hemp oil is  made from organic sun-grown hemp plants from Colorado, USA. Our oils are rich with nutritious omega-3 fats, which are believed to be heart healthy, anti-inflammatory, and can improve moods and energies. Ingredients: grape seed oil, hemp seed oil, spectrum rich hemp oil extract. </p>
+                                            <a class="button-2 text-dark-red text-uppercase" href="#">GET DISCOUNT <i class="zmdi zmdi-long-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single-discount-product end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- DISCOUNT-PRODUCT END -->
+<!-- BLGO-AREA START -->
+<div class="blog-area blog-2 pt-50">
+    <div class="container">
+        <!-- Section-title start -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h2 class="title-border">From The Blog</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Section-title end -->
+        <div class="row">
+            <!-- Single-blog start -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="single-blog mt-30">
+                    <div class="blog-photo">
+                        <a href="#"><img src="/images/blog/3.jpg" alt="" /></a>
+                        <div class="like-share text-center fix">
+                            <a href="#"><i class="zmdi zmdi-favorite"></i><span>89 Like</span></a>
+                            <a href="#"><i class="zmdi zmdi-comments"></i><span>59 Comments</span></a>
+                            <a href="#"><i class="zmdi zmdi-share"></i><span>29 Share</span></a>
+                        </div>
+                    </div>
+                    <div class="blog-info"> 
+                        <div class="post-meta fix">
+                            <div class="post-date floatleft"><span class="text-dark-red">30</span></div>
+                            <div class="post-year floatleft">
+                                <p class="text-uppercase text-dark-red mb-0">June, 2016</p>
+                                <h4 class="post-title"><a href="#" tabindex="0">Farniture drawing 2016</a></h4>
+                            </div>
+                        </div>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered If you are going to use a passage  Lorem Ipsum, you alteration in some form.</p>
+                        <a href="#" class="button-2 text-dark-red">Read more...</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Single-blog end -->
+            <!-- Single-blog start -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="single-blog mt-30">
+                    <div class="blog-photo">
+                        <a href="#"><img src="/images/blog/4.jpg" alt="" /></a>
+                        <div class="like-share text-center fix">
+                            <a href="#"><i class="zmdi zmdi-favorite"></i><span>89 Like</span></a>
+                            <a href="#"><i class="zmdi zmdi-comments"></i><span>59 Comments</span></a>
+                            <a href="#"><i class="zmdi zmdi-share"></i><span>29 Share</span></a>
+                        </div>
+                    </div>
+                    <div class="blog-info"> 
+                        <div class="post-meta fix">
+                            <div class="post-date floatleft"><span class="text-dark-red">30</span></div>
+                            <div class="post-year floatleft">
+                                <p class="text-uppercase text-dark-red mb-0">June, 2016</p>
+                                <h4 class="post-title"><a href="#" tabindex="0">Farniture drawing 2016</a></h4>
+                            </div>
+                        </div>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered If you are going to use a passage  Lorem Ipsum, you alteration in some form.</p>
+                        <a href="#" class="button-2 text-dark-red">Read more...</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Single-blog end -->
+            <!-- Single-blog start -->
+            <div class="col-lg-4 col-md-4 hidden-sm col-xs-12">
+                <div class="single-blog mt-30">
+                    <div class="blog-photo">
+                        <a href="#"><img src="/images/blog/5.jpg" alt="" /></a>
+                        <div class="like-share text-center fix">
+                            <a href="#"><i class="zmdi zmdi-favorite"></i><span>89 Like</span></a>
+                            <a href="#"><i class="zmdi zmdi-comments"></i><span>59 Comments</span></a>
+                            <a href="#"><i class="zmdi zmdi-share"></i><span>29 Share</span></a>
+                        </div>
+                    </div>
+                    <div class="blog-info"> 
+                        <div class="post-meta fix">
+                            <div class="post-date floatleft"><span class="text-dark-red">30</span></div>
+                            <div class="post-year floatleft">
+                                <p class="text-uppercase text-dark-red mb-0">June, 2016</p>
+                                <h4 class="post-title"><a href="#" tabindex="0">Farniture drawing 2016</a></h4>
+                            </div>
+                        </div>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered If you are going to use a passage  Lorem Ipsum, you alteration in some form.</p>
+                        <a href="#" class="button-2 text-dark-red">Read more...</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Single-blog end -->
+        </div>
+    </div>
+</div>
+<!-- BLGO-AREA END -->
+<!-- BRAND-LOGO-AREA START -->
+<div class="brand-logo-area pt-80">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="brand">
+                    <div class="brand-slider">
+                        <div class="single-brand">
+                            <a href="https://themeforest.net/user/bootexperts/portfolio" target="_blank"><img src="/images/brand/1.png" alt="" /></a>
+                        </div>
+                        <div class="single-brand">
+                            <a href="https://themeforest.net/user/codecarnival/portfolio" target="_blank"><img src="/images/brand/2.png" alt="" /></a>
+                        </div>
+                        <div class="single-brand">
+                            <a href="https://themeforest.net/user/devitems/portfolio" target="_blank"><img src="/images/brand/3.png" alt="" /></a>
+                        </div>
+                        <div class="single-brand">
+                            <a href="https://themeforest.net/user/hastech/portfolio" target="_blank"><img src="/images/brand/4.png" alt="" /></a>
+                        </div>
+                        <div class="single-brand">
+                            <a href="http://psdrightsell.com/" target="_blank"><img src="/images/brand/5.png" alt="" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- BRAND-LOGO-AREA END -->
