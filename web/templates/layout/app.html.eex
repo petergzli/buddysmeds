@@ -133,11 +133,11 @@
                 <div class="footer-area footer-2">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+                            <div class="col-lg-6 col-md-6 col-sm-5 col-xs-12">
                                 <div class="single-footer">
                                     <h3 class="footer-title  title-border">Contact Us</h3>
                                     <ul class="footer-contact">
-                                        <li><span>Address :</span>Los Angeles, USA</li>
+                                        <li><span>Made with Love in:</span>Los Angeles, USA</li>
                                         <li><span>Email :</span>buddy@buddysorganic.com</li>
                                     </ul>
                                 </div>

@@ -115,14 +115,14 @@
                                 <div class="row">
                                     <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
                                         <a href="single-blog.html">
-                                            <img src="/images/discount/5.jpg" alt="" />
+                                            <img src="/images/discount/product_image_angle1.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
                                         <div class="discount-info"> 
                                             <h1 class="text-dark-red">Organic Hemp Oil</h1>
                                             <p>Buddy’s Organic contains 0% THC and is fit for consumption by humans, dogs and cats. The main active ingredients are hemp oil, which is Our hemp oil is  made from organic sun-grown hemp plants from Colorado, USA. Our oils are rich with nutritious omega-3 fats, which are believed to be heart healthy, anti-inflammatory, and can improve moods and energies. Ingredients: grape seed oil, hemp seed oil, spectrum rich hemp oil extract. </p>
-                                            <a class="button-2 text-dark-red text-uppercase" href="#">GET DISCOUNT <i class="zmdi zmdi-long-arrow-right"></i></a>
+                                            <a class="button-2 text-dark-red text-uppercase" href="#">Buy Now <i class="zmdi zmdi-long-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -143,7 +143,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-title text-center">
-                    <h2 class="title-border">From The Blog</h2>
+                    <h2 class="title-border">News About CBD and Pets</h2>
                 </div>
             </div>
         </div>
@@ -153,23 +153,21 @@
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                 <div class="single-blog mt-30">
                     <div class="blog-photo">
-                        <a href="#"><img src="/images/blog/3.jpg" alt="" /></a>
-                        <div class="like-share text-center fix">
-                            <a href="#"><i class="zmdi zmdi-favorite"></i><span>89 Like</span></a>
-                            <a href="#"><i class="zmdi zmdi-comments"></i><span>59 Comments</span></a>
-                            <a href="#"><i class="zmdi zmdi-share"></i><span>29 Share</span></a>
-                        </div>
+                        <a href="https://ministryofhemp.com/blog/cbd-products-pet/" class="button-2 text-dark-red"><img src="https://ministryofhemp.com/wp-content/uploads/2017/03/cbd-for-pets-1.jpg" alt="" /></a>
                     </div>
                     <div class="blog-info"> 
                         <div class="post-meta fix">
-                            <div class="post-date floatleft"><span class="text-dark-red">30</span></div>
+                            <div class="post-date floatleft"><span class="text-dark-red">18</span></div>
                             <div class="post-year floatleft">
-                                <p class="text-uppercase text-dark-red mb-0">June, 2016</p>
-                                <h4 class="post-title"><a href="#" tabindex="0">Farniture drawing 2016</a></h4>
+                                <p class="text-uppercase text-dark-red mb-0">March, 2017</p>
+                                <h4 class="post-title"><a href="#" tabindex="0">GABRIELA ELIZONDO</a></h4>
                             </div>
                         </div>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered If you are going to use a passage  Lorem Ipsum, you alteration in some form.</p>
-                        <a href="#" class="button-2 text-dark-red">Read more...</a>
+                        <div>
+                            <h4 class="post-title"><a href="#" tabindex="0">What type of CBD Product is best for your Pet?</a></h4>
+                        </div>
+                        <p>The non-psychoactive, highly therapeutic compound known as cannabidiol (CBD) has opened up a new channel of alternative therapy for pets. As more people start to familiarize themselves with the healing properties of cannabinoids, it might be time to consider the use of CBD as a viable treatment option for man’s best friend.</p>
+                        <a href="https://ministryofhemp.com/blog/cbd-products-pet/" class="button-2 text-dark-red">Read more...</a>
                     </div>
                 </div>
             </div>
@@ -178,48 +176,48 @@
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                 <div class="single-blog mt-30">
                     <div class="blog-photo">
-                        <a href="#"><img src="/images/blog/4.jpg" alt="" /></a>
-                        <div class="like-share text-center fix">
-                            <a href="#"><i class="zmdi zmdi-favorite"></i><span>89 Like</span></a>
-                            <a href="#"><i class="zmdi zmdi-comments"></i><span>59 Comments</span></a>
-                            <a href="#"><i class="zmdi zmdi-share"></i><span>29 Share</span></a>
-                        </div>
+                        <a href="https://cannacompanionusa.com/benefits-of-cbd-for-dogs/"><img src="https://static.pexels.com/photos/171297/pexels-photo-171297.jpeg" alt="" /></a>
                     </div>
                     <div class="blog-info"> 
                         <div class="post-meta fix">
-                            <div class="post-date floatleft"><span class="text-dark-red">30</span></div>
+                            <div class="post-date floatleft"><span class="text-dark-red">25</span></div>
                             <div class="post-year floatleft">
-                                <p class="text-uppercase text-dark-red mb-0">June, 2016</p>
-                                <h4 class="post-title"><a href="#" tabindex="0">Farniture drawing 2016</a></h4>
+                                <p class="text-uppercase text-dark-red mb-0">October, 2017</p>
+                                <h4 class="post-title"><a href="#" tabindex="0">CannaScience, General </a></h4>
                             </div>
                         </div>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered If you are going to use a passage  Lorem Ipsum, you alteration in some form.</p>
-                        <a href="#" class="button-2 text-dark-red">Read more...</a>
+                        <div>
+                            <h4 class="post-title"><a href="https://cannacompanionusa.com/benefits-of-cbd-for-dogs/" >
+                            Benefits of CBD for Dogs </a> 
+                            </h4>   
+                        </div>
+                        <p>The cannabis plant contains a large number of chemical compounds, and many of them offer substantial health benefits for mammals. Consequently, hemp supplements that utilize these compounds can be used to support and maintain the long-term health and well-being of companion animals. At Canna Companion, we’re passionate about teaching pet owners across the nation about the incredible impact that cannabis can have on their favorite four-legged friends. Today we’ll be discussing one of the most potent and effective chemical compounds that hemp products can provide for dogs: cannabidiol.</p>
+                        <a href="https://cannacompanionusa.com/benefits-of-cbd-for-dogs/" class="button-2 text-dark-red">Read more...</a>
                     </div>
                 </div>
             </div>
             <!-- Single-blog end -->
             <!-- Single-blog start -->
-            <div class="col-lg-4 col-md-4 hidden-sm col-xs-12">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                 <div class="single-blog mt-30">
                     <div class="blog-photo">
-                        <a href="#"><img src="/images/blog/5.jpg" alt="" /></a>
-                        <div class="like-share text-center fix">
-                            <a href="#"><i class="zmdi zmdi-favorite"></i><span>89 Like</span></a>
-                            <a href="#"><i class="zmdi zmdi-comments"></i><span>59 Comments</span></a>
-                            <a href="#"><i class="zmdi zmdi-share"></i><span>29 Share</span></a>
-                        </div>
+                        <a href="http://www.miamiherald.com/living/pets/article162565958.html"><img src="http://www.miamiherald.com/living/pets/4iiqbe/picture162565953/alternates/LANDSCAPE_1140/n-MARIJUANA-DOGS-628x314" alt="" /></a>
                     </div>
                     <div class="blog-info"> 
                         <div class="post-meta fix">
-                            <div class="post-date floatleft"><span class="text-dark-red">30</span></div>
+                            <div class="post-date floatleft"><span class="text-dark-red">19</span></div>
                             <div class="post-year floatleft">
-                                <p class="text-uppercase text-dark-red mb-0">June, 2016</p>
-                                <h4 class="post-title"><a href="#" tabindex="0">Farniture drawing 2016</a></h4>
+                                <p class="text-uppercase text-dark-red mb-0">July, 2017</p>
+                                <h4 class="post-title"><a href="#" tabindex="0">Sion Touhig</a></h4>
                             </div>
                         </div>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered If you are going to use a passage  Lorem Ipsum, you alteration in some form.</p>
-                        <a href="#" class="button-2 text-dark-red">Read more...</a>
+                        <div>
+                            <h4 class="post-title"><a href="https://cannacompanionusa.com/benefits-of-cbd-for-dogs/" >
+                            Benefits of CBD for Dogs </a> 
+                            </h4>   
+                        </div>
+                        <p>In fact, many medicinal uses for marijuana were pioneered in dogs first. For decades, dogs have successfully been used as a research model to investigate marijuana’s potential efficacy in human subjects.</p>
+                        <a href="http://www.miamiherald.com/living/pets/article162565958.html" class="button-2 text-dark-red" class="button-2 text-dark-red">Read more...</a>
                     </div>
                 </div>
             </div>
@@ -228,32 +226,3 @@
     </div>
 </div>
 <!-- BLGO-AREA END -->
-<!-- BRAND-LOGO-AREA START -->
-<div class="brand-logo-area pt-80">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="brand">
-                    <div class="brand-slider">
-                        <div class="single-brand">
-                            <a href="https://themeforest.net/user/bootexperts/portfolio" target="_blank"><img src="/images/brand/1.png" alt="" /></a>
-                        </div>
-                        <div class="single-brand">
-                            <a href="https://themeforest.net/user/codecarnival/portfolio" target="_blank"><img src="/images/brand/2.png" alt="" /></a>
-                        </div>
-                        <div class="single-brand">
-                            <a href="https://themeforest.net/user/devitems/portfolio" target="_blank"><img src="/images/brand/3.png" alt="" /></a>
-                        </div>
-                        <div class="single-brand">
-                            <a href="https://themeforest.net/user/hastech/portfolio" target="_blank"><img src="/images/brand/4.png" alt="" /></a>
-                        </div>
-                        <div class="single-brand">
-                            <a href="http://psdrightsell.com/" target="_blank"><img src="/images/brand/5.png" alt="" /></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- BRAND-LOGO-AREA END -->
