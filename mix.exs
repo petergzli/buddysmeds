@@ -4,7 +4,7 @@ defmodule Buddysmeds.Mixfile do
   def project do
     [
       app: :buddysmeds,
-      version: "0.0.13",
+      version: "0.0.14",
       elixir: "~> 1.4",
       elixirc_paths: elixirc_paths(Mix.env),
       compilers: [:phoenix, :gettext] ++ Mix.compilers,
@@ -20,7 +20,7 @@ defmodule Buddysmeds.Mixfile do
   def application do
     [
       mod: {Buddysmeds, []},
-      applications: [:phoenix, :phoenix_html, :cowboy, :edeliver, :postgrex, :ecto, :gettext],
+      applications: [:phoenix, :phoenix_html, :cowboy, :edeliver, :postgrex, :ecto, :gettext, :mailgun],
       extra_applications: [:logger]
     ]
   end
@@ -43,7 +43,9 @@ defmodule Buddysmeds.Mixfile do
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
       {:edeliver, "~> 1.4.2"},
-      {:distillery, "~> 1.4"}
+      {:distillery, "~> 1.4"},
+      {:mailgun, "~> 0.1.2"},
+      {:poison, "~> 2.0", override: true}
     ]
   end
 

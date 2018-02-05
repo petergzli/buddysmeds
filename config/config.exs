@@ -9,6 +9,10 @@ use Mix.Config
 config :buddysmeds,
   ecto_repos: [Buddysmeds.Repo]
 
+config :buddysmeds,
+ mailgun_domain: "https://api.mailgun.net/v3/buddysorganic.com",
+ mailgun_key: "key-ee2e83ab68158ac42731accf8950161c"
+
 # Configures the endpoint
 config :buddysmeds, Buddysmeds.Endpoint,
   url: [host: "localhost"],

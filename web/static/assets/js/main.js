@@ -260,7 +260,7 @@
     $.ajax({
       type: "POST",
       url: "/contact",
-      data   : {"data": {"email": $('#contact-email').val()}},
+      data   : {"data": {"recipient": $('#contact-email').val()}},
       beforeSend: function(xhr) {
           xhr.setRequestHeader("X-CSRF-Token", csrf_token);
       },
@@ -268,7 +268,10 @@
           $('.modal-result').html(response["message"]);
           $('.modal.in').modal('hide');
           $('#result').modal('show');
-
+          $('#contact-email').val('');
+          $("html, body").animate({
+              scrollTop: 0
+          }, 1000);  
       },
 
       error: function(){
@@ -286,12 +289,5 @@
             $body.css('padding-right', '');
         }
     });
-
-  $("#modal-response-close").click(function() {
-    $('#contact-email').val('');
-    $("html, body").animate({
-        scrollTop: 0
-    }, 1000);  
-  });
 
 })(jQuery);
