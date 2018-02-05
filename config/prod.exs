@@ -16,6 +16,10 @@ config :buddysmeds, Buddysmeds.Endpoint,
   url: [host: "buddysorganic.com", port: 443, scheme: "https"],
   cache_static_manifest: "priv/static/cache_manifest.json"
 
+config :buddysmeds,
+ mailgun_domain: "https://api.mailgun.net/v3/buddysorganic.com",
+ mailgun_key: "key-ee2e83ab68158ac42731accf8950161c"
+
 # Do not print debug messages in production
 config :logger, level: :info
 config :phoenix, :serve_endpoints, true
