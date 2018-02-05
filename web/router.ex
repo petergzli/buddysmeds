@@ -18,7 +18,7 @@ defmodule Buddysmeds.Router do
 
     get "/", PageController, :index
     get "/about", PageController, :about
-    post "/learn", LearnController, :post_email
+    post "/contact",ContactController, :post_email
   end
 
   # Other scopes may use custom stacks.

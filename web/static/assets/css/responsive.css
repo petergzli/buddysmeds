@@ -14,6 +14,11 @@
   margin-right: 10%;
   width: 38%;
 }
+.slider-style-2 .layer-2 {
+  margin-left: 10%;
+  width: 38%;
+}
+
 .banner-2 .banner-brief {
   width: 45%;
 }
@@ -58,6 +63,10 @@
 }
 .slider-title2 {
   font-size: 20px;
+  line-height: 30px;
+}
+.slider-title-white-size {
+  font-size: 16px;
   line-height: 30px;
 }
 /* product Arrow */
@@ -360,7 +369,7 @@
   padding: 25px 0;
 }
 .mobile-menu-area {
-  background: #c8a165 none repeat scroll 0 0;
+  background: #EF9020 none repeat scroll 0 0;
 }
 .mean-container .mean-nav ul li.mean-last {
   margin-bottom: 20px;

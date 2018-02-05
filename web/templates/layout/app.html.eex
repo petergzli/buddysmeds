@@ -70,7 +70,7 @@
                     <nav>
                         <ul>
                             <li><a href="about">about us</a></li>
-                            <li><a href="contact.html">contact</a></li>
+                            <li><a href="#contact">contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -85,39 +85,8 @@
                             <div class="mobile-menu">
                                 <nav id="dropdown">
                                     <ul>
-                                        <li><a href="index.html">home</a>
-                                            <ul>
-                                                <li><a href="index.html">Home Version 1</a></li>
-                                                <li><a href="index-2.html">Home Version 2</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="shop.html">products</a></li>
-                                        <li><a href="shop-sidebar.html">accesories</a></li>
-                                        <li><a href="shop-list.html">lookbook</a></li>
-                                        <li><a href="blog.html">blog</a></li>
-                                        <li><a href="#">pages</a>
-                                            <ul>
-                                                <li><a href="shop.html">Shop</a></li>
-                                                <li><a href="shop-sidebar.html">Shop Sidebar</a></li>
-                                                <li><a href="shop-list.html">Shop List</a></li>
-                                                <li><a href="single-product.html">Single Product</a></li>
-                                                <li><a href="single-product-sidebar.html">Single Product Sidebar</a></li>
-                                                <li><a href="cart.html">Shopping Cart</a></li>
-                                                <li><a href="wishlist.html">Wishlist</a></li>
-                                                <li><a href="checkout.html">Checkout</a></li>
-                                                <li><a href="order.html">Order</a></li>
-                                                <li><a href="login.html">login / Registration</a></li>
-                                                <li><a href="my-account.html">My Account</a></li>
-                                                <li><a href="404.html">404</a></li>
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="single-blog.html">Single Blog</a></li>
-                                                <li><a href="single-blog-sidebar.html">Single Blog Sidebar</a></li>
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="about.html">about us</a></li>
-                                        <li><a href="contact.html">contact</a></li>
+                                        <li><a href="about">about us</a></li>
+                                        <li><a href="#contact">contact</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -127,6 +96,23 @@
             </div>
             <!-- Mobile-menu end -->
             <%= render @view_module, @view_template, assigns %>
+
+            <!-- MODAL: Result Message -->
+            <div class="modal fade" id="result" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button id="modal-response-close" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <div class="modal-title">Email Subscription Message</div>
+                        </div>
+                        <div class="modal-body">
+                            <p class="modal-result"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF MODAL: Result Message -->
+
             <!-- FOOTER START -->
             <footer>
                 <!-- Footer-area start -->
@@ -145,12 +131,13 @@
                             
                             
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <div class="single-footer">
+                                <div id="contact" class="single-footer">
                                     <h3 class="footer-title  title-border">Email Newsletters</h3>
                                     <div class="footer-subscribe">
-                                        <form action="#">
-                                            <input type="text" name="email" placeholder="Email Address..." />
-                                            <button class="button-one submit-btn-4" type="submit" data-text="Subscribe">Subscribe</button>
+                                        <form method="post" class="form-ajax">
+                                            <input type="hidden" name="csrf-token" id="csrf-token" value="<%= Plug.CSRFProtection.get_csrf_token() %>">
+                                            <input id="contact-email" type="text" name="email" placeholder="Email Address..." />
+                                            <button id="subscribe-btn-footer" class="button-one submit-btn-4" type="submit">Subscribe</button>
                                         </form>
                                     </div>
                                 </div>

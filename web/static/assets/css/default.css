@@ -28,6 +28,9 @@
 .cart-info h5 a, .slider-title2, .slider-title3 {
   color: #666;
 }
+.slider-title-white {
+  color: #fff;
+}
 .cart-info a:hover {
   color: #C8A165;
 }
@@ -44,7 +47,7 @@
   color: #C8A165;
 }
 .banner-3 .banner-title span {
-  color: #c8a165;
+  color: #EF9020;
 }
 .sidebar-social ul > li:hover a,
 .sidebar-account ul > li:hover a {
@@ -76,7 +79,7 @@
   position: absolute;
   top: 20px;
   z-index: 2;
-  background: #c8a165 none repeat scroll 0 0;
+  background: #EF9020 none repeat scroll 0 0;
   border-radius: 5px;
   color: #fff;
   height: 25px;
@@ -85,7 +88,7 @@
   text-transform: capitalize;
 }
 .pro-label.new-label {
-  background: #c8a165 none repeat scroll 0 0;
+  background: #EF9020 none repeat scroll 0 0;
 }
 .pro-label.sale-label {
   background: #EF9020 none repeat scroll 0 0;
@@ -104,7 +107,7 @@
   border-radius: 0;
 }	
 .button-one {
-  background: #efefef none repeat scroll 0 0;
+  background: #EF9020 none repeat scroll 0 0;
   display: inline-block;
   height: 30px;
   line-height: 30px;
@@ -113,7 +116,7 @@
   position: relative;
 }	
 .button-one::before {
-  background: #c8a165 none repeat scroll 0 0;
+  background: #EF9020 none repeat scroll 0 0;
   bottom: 0;
   color: #fff;
   content: attr(data-text);
@@ -126,7 +129,7 @@
   z-index: 11;
 }
 .button-one::after {
-  border: 2px solid #d3d3d3;
+  border: 2px solid #EF9020;
   bottom: 0;
   content: "";
   left: 0;
@@ -866,7 +869,7 @@ h3.widget-title-modal {
   z-index: 200;
 }
 #scrollUp:hover {
-    background: #c8a165 none repeat scroll 0 0;
+    background: #EF9020 none repeat scroll 0 0;
 }
 @keyframes scroll-ani-to-top {
 	0% {

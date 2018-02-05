@@ -2,9 +2,9 @@
 <section class="slider-area slider-style-2">
     <div class="bend niceties preview-2">
         <div id="ensign-nivoslider" class="slides"> 
-            <img src="/images/slider/slider-2/1.jpg" alt="" title="#slider-direction-1"  />
-            <img src="/images/slider/slider-2/2.jpg" alt="" title="#slider-direction-2"  />
-            <img src="/images/slider/slider-2/3.jpg" alt="" title="#slider-direction-3"  />
+            <img src="/images/slider/slider-2/buddys-header.jpg" alt="" title="#slider-direction-1"  />
+            <img src="/images/slider/slider-2/header-slide-2.jpg" alt="" title="#slider-direction-2"  />
+            <img src="/images/slider/slider-2/header-3.jpg" alt="" title="#slider-direction-3"  />
         </div>
         <!-- direction 1 -->
         <div id="slider-direction-1" class="t-cn slider-direction">
@@ -13,16 +13,16 @@
                 <div class="title-container s-tb-c title-compress">
                     <div class="layer-1">
                         <div class="wow fadeInUpBig" data-wow-duration="2s" data-wow-delay="0.5s">
-                            <h3 class="slider-title3 text-uppercase mb-0" >welcome to our</h3>
+                            <h3 class="slider-title3 text-uppercase mb-0" >welcome to buddy's shop</h3>
                         </div>
                         <div class="wow fadeInUpBig" data-wow-duration="2.5s" data-wow-delay="0.5s">
-                            <h2 class="slider-title1 text-uppercase mb-0"><span class="hidden-xs">elegent </span>  furniture</h2>
+                            <h2 class="slider-title1 text-uppercase mb-0"><span class="hidden-xs">Organic </span> Pet Products</h2>
                         </div>
                         <div class="wow fadeInUpBig" data-wow-duration="3s" data-wow-delay="0.5s">
-                            <h2 class="slider-title2 text-uppercase" >gallery 2016</h2>
+                            <h2 class="slider-title2 text-uppercase" ></h2>
                         </div>
                         <div class="wow fadeInUpBig" data-wow-duration="3.5s" data-wow-delay="0.5s">
-                            <a href="#" class="button-one style-2 text-uppercase mt-20" data-text="Shop now">Shop now</a>
+                            <a href="https://www.amazon.com/dp/B079J6FYNS" class="button-one style-2 text-uppercase mt-20" data-text="Buy now">Buy now</a>
                         </div>
                     </div>
                 </div>
@@ -33,47 +33,45 @@
             <div class="slider-progress"></div>
             <div class="slider-content t-lfl s-tb slider-1">
                 <div class="title-container s-tb-c title-compress">
-                    <div class="layer-1">
-                        <div class="wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                            <h3 class="slider-title3 text-uppercase mb-0" >welcome to our</h3>
-                        </div>
-                        <div class="wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
-                            <h2 class="slider-title1 text-uppercase"><span class="hidden-xs">elegent </span> furniture</h2>
-                        </div>
+                    <div class="layer-2">
                         <div class="wow fadeInUpBig" data-wow-duration="2s" data-wow-delay="0.5s">
-                            <p class="slider-pro-brief">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.  If you are going to use a  passage of Lorem Ipsum, you need to be sure there hidden in the middle of text.</p>
+                            <h3 class="slider-title3 text-uppercase mb-0" >human-grade</h3>
                         </div>
                         <div class="wow fadeInUpBig" data-wow-duration="2.5s" data-wow-delay="0.5s">
-                            <a href="#" class="button-one style-2 text-uppercase mt-20" data-text="Shop now">Shop now</a>
+                            <h2 class="slider-title1 text-uppercase mb-0"><span class="hidden-xs">Vegan and </span> Cold-pressed</h2>
+                        </div>
+                        <div class="wow fadeInUpBig" data-wow-duration="3s" data-wow-delay="0.5s">
+                            <h2 class="slider-title2 text-uppercase" ></h2>
+                        </div>
+                        <div class="wow fadeInUpBig" data-wow-duration="3.5s" data-wow-delay="0.5s">
+                            <a href="https://www.amazon.com/dp/B079J6FYNS" class="button-one style-2 text-uppercase mt-20" data-text="Buy now">Buy now</a>
                         </div>
                     </div>
                 </div>
-            </div>      
+            </div>     
         </div>
         <!-- direction 3 -->
-        <div id="slider-direction-3" class="slider-direction">
+        <!-- direction 1 -->
+        <div id="slider-direction-3" class="t-cn slider-direction">
             <div class="slider-progress"></div>
             <div class="slider-content t-lfl s-tb slider-1">
                 <div class="title-container s-tb-c title-compress">
                     <div class="layer-1">
-                        <div class="wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                            <h3 class="slider-title3 text-uppercase mb-0" >welcome to our</h3>
-                        </div>
-                        <div class="wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
-                            <h2 class="slider-title1 text-uppercase mb-0"><span class="hidden-xs">elegent </span> furniture</h2>
-                        </div>
                         <div class="wow fadeInUpBig" data-wow-duration="2s" data-wow-delay="0.5s">
-                            <h2 class="slider-title2 text-uppercase" >gallery 2016</h2>
+                            <h3 class="slider-title-white slider-title3 text-uppercase mb-0" >raw organic hemp oil</h3>
                         </div>
                         <div class="wow fadeInUpBig" data-wow-duration="2.5s" data-wow-delay="0.5s">
-                            <p class="slider-pro-brief">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.  If you are going to use a  passage of Lorem Ipsum, you need to be sure there hidden in the middle of text.</p>
+                            <h2 class="slider-title-white slider-title1 text-uppercase mb-0"><span class="hidden-xs">omega-3 </span> omega-6</h2>
                         </div>
                         <div class="wow fadeInUpBig" data-wow-duration="3s" data-wow-delay="0.5s">
-                            <a href="#" class="button-one style-2 text-uppercase mt-20" data-text="Shop now">Shop now</a>
+                            <h2 class="slider-title2 text-uppercase" ></h2>
+                        </div>
+                        <div class="wow fadeInUpBig" data-wow-duration="3.5s" data-wow-delay="0.5s">
+                            <a href="https://www.amazon.com/dp/B079J6FYNS" class="button-one style-2 text-uppercase mt-20" data-text="Buy now">Buy now</a>
                         </div>
                     </div>
                 </div>
-            </div>      
+            </div>  
         </div>
     </div>
 </section>
@@ -85,9 +83,10 @@
         <div class="subscription-footer col-md-4 col-md-offset-4">
             <h3 class="email-subscription-title">Hear From Buddy</h3>
             <div class="email-subscription">
-                <form action="#">
-                    <input id="subscribe-email" type="text" name="email" placeholder="buddy@example.com" />
-                    <button class="button-one submit-btn-4" type="submit" data-text="Subscribe">Subscribe</button>
+                <form method="post" class="form-ajax">
+                    <input type="hidden" name="csrf-token" id="csrf-token" value="<%= Plug.CSRFProtection.get_csrf_token() %>">
+                    <input id="contact-email" type="text" name="email" placeholder="Email Address..." />
+                    <button id="subscribe-btn-footer" class="button-one submit-btn-4" type="submit">Subscribe</button>
                 </form>
             </div>
         </div>
@@ -115,14 +114,14 @@
                                 <div class="row">
                                     <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
                                         <a href="single-blog.html">
-                                            <img src="/images/discount/product_image_angle1.png" alt="" />
+                                            <img src="/images/discount/product_image_hand.png" alt="" />
                                         </a>
                                     </div>
                                     <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
                                         <div class="discount-info"> 
                                             <h1 class="text-dark-red">Organic Hemp Oil</h1>
                                             <p>Buddy’s Organic contains 0% THC and is fit for consumption by humans, dogs and cats. The main active ingredients are hemp oil, which is Our hemp oil is  made from organic sun-grown hemp plants from Colorado, USA. Our oils are rich with nutritious omega-3 fats, which are believed to be heart healthy, anti-inflammatory, and can improve moods and energies. Ingredients: grape seed oil, hemp seed oil, spectrum rich hemp oil extract. </p>
-                                            <a class="button-2 text-dark-red text-uppercase" href="#">Buy Now <i class="zmdi zmdi-long-arrow-right"></i></a>
+                                            <a class="button-2 text-dark-red text-uppercase" href="https://www.amazon.com/dp/B079J6FYNS">Buy Now <i class="zmdi zmdi-long-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>

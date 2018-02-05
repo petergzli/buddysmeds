@@ -249,6 +249,49 @@
 		}
 	});
 
+	/*-----------------------------------------------------------------
+	* Ajax forms
+	*-----------------------------------------------------------------*/
 
+	$("#subscribe-btn-footer").click(function(e) {
+    e.preventDefault();
+    var csrf_token = $('#csrf-token').val();
+
+    $.ajax({
+      type: "POST",
+      url: "/contact",
+      data   : {"data": {"email": $('#contact-email').val()}},
+      beforeSend: function(xhr) {
+          xhr.setRequestHeader("X-CSRF-Token", csrf_token);
+      },
+      success: function(response) {
+          $('.modal-result').html(response["message"]);
+          $('.modal.in').modal('hide');
+          $('#result').modal('show');
+
+      },
+
+      error: function(){
+          $('.modal-result').html('Error sending message');
+          $('.modal.in').modal('hide');
+          $('#result').modal('show');
+
+      }
+    });
+  });
+
+  $('.modal').on('hide.bs.modal', function (e) {
+        var $body = $('body');
+        if (parseInt($body.css('padding-right')) > 0) {
+            $body.css('padding-right', '');
+        }
+    });
+
+  $("#modal-response-close").click(function() {
+    $('#contact-email').val('');
+    $("html, body").animate({
+        scrollTop: 0
+    }, 1000);  
+  });
 
 })(jQuery);
