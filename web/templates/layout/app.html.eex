@@ -143,24 +143,26 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="row">
+                            <div class = "col-sm-6 col-xs-6 col-sm-offset-6">
+                                <h3 class="widget-title-modal">Like us on Social!</h3>
+                                <ul class="social-icons">
+                                    <li><a target="_blank" title="Facebook" href="https://www.facebook.com/Buddys-Organic-1834357413531670/" class="facebook social-icon"><i class="zmdi zmdi-facebook"></i></a></li>
+                                    <li><a target="_blank" title="Instagram" href="https://www.instagram.com/buddysorganic/" class="instagram social-icon"><i class="zmdi zmdi-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- Footer-area end -->
+
                 <!-- Copyright-area start -->
                 <div class="copyright-area copyright-2">
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm-6 col-xs-12">
+                            <div class="col-sm-6 col-xs-6">
                                 <div class="copyright">
                                     <p class="mb-0">&copy; <a href="http://buddysorganic.com" target="_blank">Buddy's Organic </a> 2018. All Rights Reserved.</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-xs-12">
-                                <div class="payment  text-right">
-                                    <a href="#"><img src="/images/payment/1.png" alt="" /></a>
-                                    <a href="#"><img src="/images/payment/2.png" alt="" /></a>
-                                    <a href="#"><img src="/images/payment/3.png" alt="" /></a>
-                                    <a href="#"><img src="/images/payment/4.png" alt="" /></a>
                                 </div>
                             </div>
                         </div>
@@ -185,7 +187,6 @@
                                             <img alt="#" src="/images/product/quickview-photo.jpg"/>
                                         </div>
                                     </div><!-- .product-images -->
-
                                     <div class="product-info">
                                         <h1>Aenean eu tristique</h1>
                                         <div class="price-box-3">
@@ -228,7 +229,6 @@
                <!-- END Modal -->
             </div>
             <!-- END QUICKVIEW PRODUCT -->  
-            
         </div>
         <!-- WRAPPER END -->
 

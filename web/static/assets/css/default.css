@@ -814,6 +814,17 @@ h3.widget-title-modal {
     list-style: outside none none;
     margin-right: 10px;
 }
+.social-icons {
+    float: center;
+    margin: 0;
+    padding: 0;
+}
+.social-icons li {
+    float: center;
+    line-height: 30px;
+    list-style: outside none none;
+    margin-right: 10px;
+}
 .modal-product .widget .social-icons li .social-icon {
     border: 1px solid #e5e5e5;
     color: #909295;
