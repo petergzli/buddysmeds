@@ -116,7 +116,7 @@
   position: relative;
 }	
 .button-one::before {
-  background: #EF9020 none repeat scroll 0 0;
+  background: none repeat scroll 0 0;
   bottom: 0;
   color: #fff;
   content: attr(data-text);

@@ -1112,7 +1112,7 @@ body {
 	11. Shop-page
 ----------------------------------- */
 .heading-banner-area {
-  background: rgba(0, 0, 0, 0) url("/images/bg/1.jpg") no-repeat scroll center center / cover ;
+  background: rgba(0, 0, 0, 0) url("/images/bg/free-gift.jpg") no-repeat scroll center center / cover ;
 }
 .heading-banner-title h2 {
   color: #fff;
@@ -1126,10 +1126,10 @@ body {
 }
 .breadcumbs ul { overflow: hidden;}
 .breadcumbs li {
-  color: #eee;
+  color: #7DC144;
   display: inline-block;
   float: left;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
   margin-left: 38px;
   position: relative;
@@ -1817,7 +1817,7 @@ input.cart-plus-minus-box {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  background: rgba(246, 246, 246, 1) url("img/bg/angel-down.png") no-repeat scroll 97% center;
+  background: rgba(246, 246, 246, 1) url("/images/bg/angel-down.png") no-repeat scroll 97% center;
   border: medium none;
   color: #999;
   height: 40px;
@@ -1886,7 +1886,7 @@ input.cart-plus-minus-box {
   box-shadow: none;
 }
 .my-account-menu a {
-  background: #C8A165;
+  background: #7DC144;
   color: #fff;
   display: block;
   font-style: normal;
@@ -1896,7 +1896,7 @@ input.cart-plus-minus-box {
   padding: 0 30px;
   text-transform: uppercase;
 }
-.my-account-menu a.collapsed { background: #C87065;}
+.my-account-menu a.collapsed { background: #EF9020;}
 .my-account-menu-2 a { background: #C87065;}
 .my-account .panel-body { padding: 0;}
 /* ---------------------------------

@@ -1,0 +1,75 @@
+<!-- HEADING-BANNER START -->
+<div class="heading-banner-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="heading-banner">
+          <div class="heading-banner-title">
+            <h2></h2>
+          </div>
+          <div class="breadcumbs pb-15">
+            <ul>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- HEADING-BANNER END -->
+<!-- MY-ACCOUNT-AREA START -->
+<div class="my-account-area  pt-80 pb-80">
+  <div class="container"> 
+    <div class="my-account">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="panel-group" id="accordion">
+            <div class="panel">
+              <div class="my-account-menu" >
+                <a  data-toggle="collapse" data-parent="#accordion" href="#my-info" >
+                To Claim Your Free Toy, Please Fill Out Below
+                </a>
+              </div>
+              <div id="my-info" class="panel-collapse collapse in" >
+                <div class="panel-body">
+                  <div class="billing-details shop-cart-table">
+                    <form method="post" class="form-ajax">
+                        <input type="hidden" name="csrf-token" id="csrf-token" value="<%= Plug.CSRFProtection.get_csrf_token() %>">
+                        <input id="gift-first-name" type="text" placeholder="Your first name here...">
+                        <input id="gift-last-name" type="text" placeholder="Your last name here...">
+                        <input id="gift-email" type="text" placeholder="Email address here...">
+                        <select id="gift-content" class="custom-select mb-15">
+                          <option>Choose a Toy</option>
+                          <option>Buddy's Unicorn</option>
+                          <option>Chew Toy</option>
+                        </select>
+                        <button id="submit-btn-footer" class="button-one submit-btn-4" type="submit">Submit</button>
+                    </form>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>         
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MY-ACCOUNT-CART-AREA END -->
+<!-- MY-ACCOUNT-AREA START -->
+<div class="my-account-area  pt-80 pb-80">
+  <div class="container"> 
+    <div class="my-account">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div>
+            <p>Only customers who have purchased Buddy's Organic 30 ml Premium Hemp Oil tincture can claim free gift. Limited to 1 free gift per unique customer for this limited offer.</p>       
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MY-ACCOUNT-CART-AREA END -->

@@ -290,4 +290,44 @@
         }
     });
 
+  /*-----------------------------------------------------------------
+  * Ajax forms
+  *-----------------------------------------------------------------*/
+
+  $("#submit-btn-footer").click(function(e) {
+    e.preventDefault();
+    var csrf_token = $('#csrf-token').val();
+
+    $.ajax({
+      type: "POST",
+      url: "/get-gift",
+      data   : {"data": {"email": $('#gift-email').val(), "first_name": $('#gift-first-name').val(), "last_name": $('#gift-last-name').val(), "content": $('#gift-content').val()}},
+      beforeSend: function(xhr) {
+          xhr.setRequestHeader("X-CSRF-Token", csrf_token);
+      },
+      success: function(response) {
+          $('.modal-gift-result').html(response["message"]);
+          $('.modal.in').modal('hide');
+          $('#gift-result').modal('show');
+      },
+
+      error: function(){
+          $('.modal-gift-result').html('Error sending request');
+          $('.modal.in').modal('hide');
+          $('#error-result').modal('show');
+      }
+    });
+  });
+
+  $('#gift-result').on('hide.bs.modal', function (e) {
+      window.location.href = "/";
+  });
+
+  $('#error-result').on('hide.bs.modal', function (e) {
+      var $body = $('body');
+      if (parseInt($body.css('padding-right')) > 0) {
+          $body.css('padding-right', '');
+      }
+  });
+
 })(jQuery);

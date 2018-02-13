@@ -8,4 +8,8 @@ defmodule Buddysmeds.PageController do
   def about(conn, _params) do
     render conn, "about.html"
   end
+
+  def gift(conn, _params) do
+    render conn, "gift-information.html"
+  end
 end

@@ -19,6 +19,8 @@ defmodule Buddysmeds.Router do
     get "/", PageController, :index
     get "/about", PageController, :about
     post "/contact",ContactController, :post_email
+    get "/gift", PageController, :gift
+    post "/get-gift", GiftController, :post_data
   end
 
   # Other scopes may use custom stacks.
