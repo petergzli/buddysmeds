@@ -19,7 +19,7 @@ defmodule Buddysmeds.Router do
     get "/", PageController, :index
     get "/about", PageController, :about
     post "/contact",ContactController, :post_email
-    get "/gift", PageController, :gift
+    get "/gifts", PageController, :gift
     post "/get-gift", GiftController, :post_data
   end
 
