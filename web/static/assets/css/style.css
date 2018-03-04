@@ -1111,7 +1111,13 @@ body {
 /* ---------------------------------
 	11. Shop-page
 ----------------------------------- */
+.about-photo {
+  background-color: #7DC144;
+}
 .heading-banner-area {
+  background: rgba(0, 0, 0, 0) url("/images/bg/about-banner.png") no-repeat scroll center center / cover ;
+}
+.heading-banner-area-gift {
   background: rgba(0, 0, 0, 0) url("/images/bg/free-gift.jpg") no-repeat scroll center center / cover ;
 }
 .heading-banner-title h2 {

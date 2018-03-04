@@ -26,15 +26,15 @@
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div class="about-photo">
-            <img src="/images/bg/about.png" alt="" />
+            <%# <img src="/images/bg/about.png" alt="" /> %>
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div class="about-brief bg-dark-white">
             <h4 class="title-1 title-border text-uppercase mb-30">about buddy's organic</h4>
-            <p>Buddy's Organic is a company.</p>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit. voluptatem accusantium doloremque laudantium, totam remes aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+            <p>Buddy's Organic specializes in organic pet products. Our featured product is our signature hemp oil made from the finest sun-grown hemp in Colorado, USA.</p>
+
+            <p>We make happy pets, happier.</p>
           </div>
         </div>
       </div>
